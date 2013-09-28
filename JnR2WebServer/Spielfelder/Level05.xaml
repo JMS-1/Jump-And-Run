@@ -1,0 +1,207 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kennung="756781d7-a600-413c-8394-fa7f0928682a"
+    Beschreibung="Eingang zu Halloweentown"
+    Bild="bilder/06/spielfeld.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="586, 467"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"                       
+    >
+
+    <Element HorizontalePosition="546" VertikalePosition="436" Breite="1" Hoehe="500"/>
+
+    <Element HorizontalePosition="561" VertikalePosition="429" Breite="172" Hoehe="3"/>
+    <Element HorizontalePosition="832" VertikalePosition="512" Breite="138" Hoehe="2"/>
+    <Element HorizontalePosition="1114" VertikalePosition="512" Breite="606" Hoehe="2"/>
+    <Element HorizontalePosition="1718" VertikalePosition="512" Breite="2" Hoehe="28"/>
+    <Element HorizontalePosition="1718" VertikalePosition="538" Breite="192" Hoehe="3"/>
+
+    <Element HorizontalePosition="743" VertikalePosition="439" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="755" VertikalePosition="449" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="766" VertikalePosition="457" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="777" VertikalePosition="467" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="787" VertikalePosition="475" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="796" VertikalePosition="484" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="806" VertikalePosition="492" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="816" VertikalePosition="501" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="827" VertikalePosition="509" Breite="1" Hoehe="1"/>
+
+    <Element HorizontalePosition="1137" VertikalePosition="620" Breite="3" Hoehe="301"/>
+
+    <Element HorizontalePosition="972" VertikalePosition="514" Breite="141" Hoehe="31"/>
+    <Element HorizontalePosition="1023" VertikalePosition="545" Breite="47" Hoehe="45"/>
+    <Element HorizontalePosition="1023" VertikalePosition="545" Breite="47" Hoehe="45"/>
+
+    <Element HorizontalePosition="1023" VertikalePosition="590" Breite="21" Hoehe="41"/>
+    <Element HorizontalePosition="1044" VertikalePosition="590" Breite="26" Hoehe="12"/>
+
+    <Element HorizontalePosition="1911" VertikalePosition="539" Breite="2" Hoehe="470"/>
+
+    <Element HorizontalePosition="1136" VertikalePosition="923" Breite="274" Hoehe="3"/>
+    <Element HorizontalePosition="1554" VertikalePosition="923" Breite="443" Hoehe="3"/>
+
+    <Element HorizontalePosition="1278" VertikalePosition="1033" Breite="82" Hoehe="3"/>
+    <Element HorizontalePosition="1480" VertikalePosition="1033" Breite="400" Hoehe="3"/>
+    <Element HorizontalePosition="1898" VertikalePosition="1016" Breite="1" Hoehe="1"/>
+
+    <Element HorizontalePosition="1240" VertikalePosition="900" Breite="1" Hoehe="400">
+        <Enderegel Gewonnen="False" ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <Element HorizontalePosition="1911" VertikalePosition="1050" Breite="2" Hoehe="500">
+        <Enderegel Gewonnen="False" ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <Element HorizontalePosition="1634" VertikalePosition="1070" Breite="13" Hoehe="11">
+        <Enderegel Gewonnen="True" ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <!-- Die Leiter samt Belohung -->
+
+    <Element HorizontalePosition="1565" VertikalePosition="597" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1554" VertikalePosition="622" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1542" VertikalePosition="648" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1531" VertikalePosition="673" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1520" VertikalePosition="705" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1506" VertikalePosition="737" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1493" VertikalePosition="768" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1482" VertikalePosition="796" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1473" VertikalePosition="818" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1462" VertikalePosition="845" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1452" VertikalePosition="874" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1443" VertikalePosition="900" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1431" VertikalePosition="926" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1423" VertikalePosition="951" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1409" VertikalePosition="978" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1400" VertikalePosition="1003" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1390" VertikalePosition="1029" Breite="1" Hoehe="1"/>
+
+    <Element HorizontalePosition="1642" VertikalePosition="648" Breite="260" Hoehe="1"/>
+    <Element HorizontalePosition="1631" VertikalePosition="673" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1620" VertikalePosition="705" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1606" VertikalePosition="737" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1593" VertikalePosition="768" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1582" VertikalePosition="796" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1573" VertikalePosition="818" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1562" VertikalePosition="845" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1552" VertikalePosition="874" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="1543" VertikalePosition="900" Breite="1" Hoehe="1"/>
+
+    <ElementMitBildSequenz HorizontalePosition="1596" VertikalePosition="596" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1554" VertikalePosition="675" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1518" VertikalePosition="761" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1485" VertikalePosition="842" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <!-- Die Gegner -->
+
+    <ElementMitBildSequenz HorizontalePosition="1287" VertikalePosition="510" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/Gegner2.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-1000" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1483" VertikalePosition="510">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/GrueneSchlange.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-500" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1800" VertikalePosition="546" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/kuerbis.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <VertikaleBewegung Sprunghöhe="20" Sprungzeit="0.2" />
+        </ElementMitBildSequenz.Animation>
+
+        <Energieregel ArtDerKollision="VomSpielerGetroffen" Lebensenergie="500" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <!-- Die Kristalle -->
+
+    <ElementMitBildSequenz HorizontalePosition="656" VertikalePosition="434" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="766" VertikalePosition="476" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="877" VertikalePosition="517" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1233" VertikalePosition="516" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1374" VertikalePosition="507" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1643" VertikalePosition="516" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+</Spielfeld>

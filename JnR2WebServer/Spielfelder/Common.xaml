@@ -1,0 +1,338 @@
+<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:models="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+        xmlns:moving="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+        >
+
+
+    <Style x:Key="unsichtbar" TargetType="models:Element">
+        <Setter Property="ElementArt" Value="Sperre" />
+    </Style>
+
+    <Style x:Key="schatzoderfalle" TargetType="models:Element">
+        <Setter Property="ElementArt" Value="Beweglich" />
+        <Setter Property="Melodie" Value="melodien/sammeln.mp3" />
+    </Style>
+
+    <Style x:Key="silberMuenze" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Wert" Value="10" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SilberMuenze.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="goldMuenze" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Wert" Value="100" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/GoldMuenze.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="item" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Wert" Value="1000" />
+        <Setter Property="Lebensenergie" Value="100" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/Item.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="treppe1stufe" TargetType="models:Element" BasedOn="{StaticResource unsichtbar}">
+        <Setter Property="Width" Value="30" />
+        <Setter Property="Height" Value="2" />
+    </Style>
+
+    <Style x:Key="treppe1block" TargetType="models:Element" BasedOn="{StaticResource unsichtbar}">
+        <Setter Property="Width" Value="10" />
+        <Setter Property="Height" Value="10" />
+    </Style>
+
+    <Style x:Key="treppe3block" TargetType="models:Element" BasedOn="{StaticResource unsichtbar}">
+        <Setter Property="Width" Value="6" />
+        <Setter Property="Height" Value="4" />
+    </Style>
+
+    <Style x:Key="lava" TargetType="models:Element">
+        <Setter Property="ElementArt" Value="EwigeFalle" />
+        <Setter Property="Lebensenergie" Value="-20000" />
+        <Setter Property="Height" Value="2" />
+    </Style>
+
+    <Style x:Key="skorpion" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Melodie" Value="{x:Null}" />
+    </Style>
+
+    <Style x:Key="skorpionrot" TargetType="models:BildElement" BasedOn="{StaticResource skorpion}">
+        <Setter Property="Lebensenergie" Value="-1000" />
+    </Style>
+
+    <Style x:Key="skorpionrotrechtsgross" TargetType="models:BildElement" BasedOn="{StaticResource skorpionrot}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionRotGrossRechts.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionrotrechts" TargetType="models:BildElement" BasedOn="{StaticResource skorpionrot}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionRotRechts.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionrotrechtsnachunten" TargetType="models:BildElement" BasedOn="{StaticResource skorpionrot}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionRotRechtsRunter.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionrotlinksnachunten" TargetType="models:BildElement" BasedOn="{StaticResource skorpionrot}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionRotLinksRunter.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionrotlinks" TargetType="models:BildElement" BasedOn="{StaticResource skorpionrot}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionRotLinks.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionorange" TargetType="models:BildElement" BasedOn="{StaticResource skorpion}">
+        <Setter Property="Lebensenergie" Value="-500" />
+    </Style>
+
+    <Style x:Key="skorpionorangerechts" TargetType="models:BildElement" BasedOn="{StaticResource skorpionorange}">
+        <Setter Property="Lebensenergie" Value="-500" />
+        <Setter Property="Melodie" Value="{x:Null}" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionOrangeRechts.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionorangelinks" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionOrangeLinks.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpionorangelinksnachunten" TargetType="models:BildElement" BasedOn="{StaticResource skorpionorange}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionOrangeLinksRunter.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpiongruen" TargetType="models:BildElement" BasedOn="{StaticResource skorpion}">
+        <Setter Property="Lebensenergie" Value="-500" />
+    </Style>
+
+    <Style x:Key="skorpiongruenrechts" TargetType="models:BildElement" BasedOn="{StaticResource skorpiongruen}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionGruenRechts.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="skorpiongruenlinks" TargetType="models:BildElement" BasedOn="{StaticResource skorpiongruen}">
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SkorpionGruenLinks.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="edelstein" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Wert" Value="250" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SchatzTyp1.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="kristall" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Wert" Value="500" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/SchatzTyp2.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="itemgegner" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Lebensenergie" Value="-50" />
+        <Setter Property="Melodie" Value="{x:Null}" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/GegnerTyp1.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <moving:Huepfen x:Key="NormalesHuepfen" SprungHoehe="10" SprungZeit="0.5" />
+
+    <Style x:Key="sarg" TargetType="models:BildElement">
+        <Setter Property="ElementArt" Value="EwigeFalle" />
+        <Setter Property="BilderProSekunde" Value="3" />
+        <Setter Property="Lebensenergie" Value="-20000" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/sarg1.png" />
+                    <models:Bild Quelle="bilder/sarg2.png" />
+                    <models:Bild Quelle="bilder/sarg3.png" />
+                    <models:Bild Quelle="bilder/sarg2.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="kuerbis" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Lebensenergie" Value="500" />
+        <Setter Property="Melodie" Value="{x:Null}" />
+        <Setter Property="Bewegung" Value="{StaticResource NormalesHuepfen}" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/kuerbis.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="spielkarte" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Lebensenergie" Value="-3000" />
+        <Setter Property="Wert" Value="500" />
+        <Setter Property="BilderProSekunde" Value="16" />
+        <Setter Property="Melodie" Value="{x:Null}" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/karte0.png" />
+                    <models:Bild Quelle="bilder/karte1.png" />
+                    <models:Bild Quelle="bilder/karte2.png" />
+                    <models:Bild Quelle="bilder/karte3.png" />
+                    <models:Bild Quelle="bilder/karte4.png" />
+                    <models:Bild Quelle="bilder/karte5.png" />
+                    <models:Bild Quelle="bilder/karte6.png" />
+                    <models:Bild Quelle="bilder/karte7.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="wolke" TargetType="models:BildElement" BasedOn="{StaticResource unsichtbar}">
+        <Setter Property="BilderProSekunde" Value="20" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/wolke1.png" />
+                    <models:Bild Quelle="bilder/wolke2.png" />
+                    <models:Bild Quelle="bilder/wolke3.png" />
+                    <models:Bild Quelle="bilder/wolke4.png" />
+                    <models:Bild Quelle="bilder/wolke3.png" />
+                    <models:Bild Quelle="bilder/wolke2.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="test" TargetType="models:BildElement" BasedOn="{StaticResource unsichtbar}">
+        <Setter Property="ElementArt" Value="Sperre" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="bilder/kuerbis.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="blauerkristall" TargetType="models:BildElement" BasedOn="{StaticResource kristall}">
+        <Setter Property="Wert" Value="400" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="Bilder/03/BlauerKristall.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="seele" TargetType="models:BildElement" BasedOn="{StaticResource kristall}">
+        <Setter Property="Wert" Value="400" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="Bilder/03/BlaueSeele.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="schlange" TargetType="models:BildElement" BasedOn="{StaticResource schatzoderfalle}">
+        <Setter Property="Lebensenergie" Value="-500" />
+        <Setter Property="Melodie" Value="{x:Null}" />
+        <Setter Property="Bilder">
+            <Setter.Value>
+                <models:BilderFeld>
+                    <models:Bild Quelle="Bilder/03/GrueneSchlange.png" />
+                </models:BilderFeld>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

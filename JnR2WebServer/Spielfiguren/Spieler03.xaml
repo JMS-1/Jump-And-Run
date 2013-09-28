@@ -1,0 +1,29 @@
+﻿<Figur xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+                     
+    SprungStaerke="100"
+    SpruengeNacheinander="2"
+    BilderProSekunde="8"
+    MaximaleGeschwindigkeit="5"
+    Name="Jack"             
+>
+    
+    <Figur.BilderRuhend>
+        <Bild Quelle="bilder/spieler3ruhend.png" />
+    </Figur.BilderRuhend>
+
+    <Figur.BilderNachLinks>
+        <Bild Quelle="bilder/spieler3links1.png" />
+        <Bild Quelle="bilder/spieler3links2.png" />
+    </Figur.BilderNachLinks>
+
+    <Figur.BilderNachRechts>
+        <Bild Quelle="bilder/spieler3rechts1.png" />
+        <Bild Quelle="bilder/spieler3rechts2.png" />
+    </Figur.BilderNachRechts>
+
+    <Figur.BilderImSprung>
+        <Bild Quelle="bilder/spieler3sprung1.png" />
+        <Bild Quelle="bilder/spieler3sprung2.png" />
+    </Figur.BilderImSprung>
+    
+</Figur>

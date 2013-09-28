@@ -1,0 +1,72 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kennung="756781d7-a600-413c-8394-fa7f0928682a"
+    Beschreibung="Oogies Casino"
+    Bild="bilder/05/Level.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1080, 502"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"                       
+    >
+
+    <Element HorizontalePosition="959" VertikalePosition="466" Breite="151" Hoehe="3"/>
+
+    <Element HorizontalePosition="959" VertikalePosition="366" Breite="2" Hoehe="102"/>
+    <Element HorizontalePosition="784" VertikalePosition="366" Breite="176" Hoehe="2"/>
+    <Element HorizontalePosition="758" VertikalePosition="359" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="699" VertikalePosition="344" Breite="30" Hoehe="3"/>
+    <Element HorizontalePosition="678" VertikalePosition="350" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="650" VertikalePosition="353" Breite="9" Hoehe="2"/>
+    <Element HorizontalePosition="637" VertikalePosition="361" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="512" VertikalePosition="366" Breite="105" Hoehe="2"/>
+
+    <Element HorizontalePosition="544" VertikalePosition="469" Breite="77" Hoehe="2"/>
+    <Element HorizontalePosition="649" VertikalePosition="461" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="682" VertikalePosition="456" Breite="64" Hoehe="3"/>
+    <Element HorizontalePosition="775" VertikalePosition="460" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="808" VertikalePosition="464" Breite="47" Hoehe="5"/>
+
+    <Element HorizontalePosition="613" VertikalePosition="470" Breite="1" Hoehe="300">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+
+    <Element HorizontalePosition="862" VertikalePosition="470" Breite="1" Hoehe="300">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+
+    <Element HorizontalePosition="491" VertikalePosition="387" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="483" VertikalePosition="401" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="472" VertikalePosition="415" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="461" VertikalePosition="429" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="453" VertikalePosition="442" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="443" VertikalePosition="455" Breite="1" Hoehe="1"/>
+    <Element HorizontalePosition="384" VertikalePosition="469" Breite="48" Hoehe="2"/>
+    <Element HorizontalePosition="431" VertikalePosition="575" Breite="1" Hoehe="300"/>
+
+    <ElementMitBildSequenz HorizontalePosition="940" VertikalePosition="471" Faellt="False" BilderProSekunde="16">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/karte0.png" />
+            <EinzelBild Quelle="bilder/karte1.png" />
+            <EinzelBild Quelle="bilder/karte2.png" />
+            <EinzelBild Quelle="bilder/karte3.png" />
+            <EinzelBild Quelle="bilder/karte4.png" />
+            <EinzelBild Quelle="bilder/karte5.png" />
+            <EinzelBild Quelle="bilder/karte6.png" />
+            <EinzelBild Quelle="bilder/karte7.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="500" />
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-3000" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen"/>
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="380" VertikalePosition="471">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/05/SkullRechts.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="True" />
+    </ElementMitBildSequenz>
+
+</Spielfeld>

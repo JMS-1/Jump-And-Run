@@ -1,0 +1,385 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kennung="3a25b921-f3bc-4817-9b74-c96413eaf852"
+    Beschreibung="Oogies Höhle Teil 3"
+    Bild="bilder/04/hintergrund.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1560, 2640"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"                       
+    >
+
+     <!-- Obere Ebene -->
+
+    <Element HorizontalePosition="1296" VertikalePosition="2602" Breite="538" Hoehe="5" />
+    <Element HorizontalePosition="579" VertikalePosition="2602" Breite="367" Hoehe="5" />
+    <Element HorizontalePosition="894" VertikalePosition="2604" Breite="1" Hoehe="300">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+
+    <!-- Zweite Ebene -->
+
+    <Element HorizontalePosition="949" VertikalePosition="2329" Breite="349" Hoehe="4" />
+    <Element HorizontalePosition="1139" VertikalePosition="1883" Breite="385" Hoehe="4" />
+    <Element HorizontalePosition="1521" VertikalePosition="1884" Breite="3" Hoehe="232" />
+    <Element HorizontalePosition="1659" VertikalePosition="1702" Breite="3" Hoehe="422" />
+
+    <Element HorizontalePosition="1310" VertikalePosition="2320" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1320" VertikalePosition="2310" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1330" VertikalePosition="2300" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1340" VertikalePosition="2290" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1350" VertikalePosition="2280" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1360" VertikalePosition="2271" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1370" VertikalePosition="2261" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1380" VertikalePosition="2251" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1390" VertikalePosition="2241" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1400" VertikalePosition="2231" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1410" VertikalePosition="2222" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1420" VertikalePosition="2212" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1430" VertikalePosition="2202" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1440" VertikalePosition="2193" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1450" VertikalePosition="2183" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1460" VertikalePosition="2174" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1470" VertikalePosition="2164" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1480" VertikalePosition="2155" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1490" VertikalePosition="2144" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1500" VertikalePosition="2135" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1510" VertikalePosition="2125" Breite="1" Hoehe="1" />
+
+    <Element HorizontalePosition="1667" VertikalePosition="2150" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1679" VertikalePosition="2200" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1698" VertikalePosition="2250" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1725" VertikalePosition="2300" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1739" VertikalePosition="2350" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1756" VertikalePosition="2400" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1772" VertikalePosition="2450" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1790" VertikalePosition="2500" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1807" VertikalePosition="2550" Breite="1" Hoehe="1" />
+
+    <!-- Dritte Ebene -->
+
+    <Element HorizontalePosition="477" VertikalePosition="1702" Breite="308" Hoehe="3" />
+    <Element HorizontalePosition="477" VertikalePosition="1702" Breite="2" Hoehe="400" />
+    <Element HorizontalePosition="1029" VertikalePosition="1702" Breite="633" Hoehe="3" />
+
+    <Element HorizontalePosition="883" VertikalePosition="2412" Breite="1" Hoehe="180" />
+    <Element HorizontalePosition="641" VertikalePosition="2297" Breite="210" Hoehe="107" />
+    <Element HorizontalePosition="682" VertikalePosition="2154" Breite="1" Hoehe="120" />
+
+    <Element HorizontalePosition="940" VertikalePosition="2320" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="932" VertikalePosition="2300" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="927" VertikalePosition="2280" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="923" VertikalePosition="2260" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="920" VertikalePosition="2240" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="914" VertikalePosition="2220" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="908" VertikalePosition="2200" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="850" VertikalePosition="2180" Breite="50" Hoehe="1">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+    <Element HorizontalePosition="704" VertikalePosition="2126" Breite="125" Hoehe="1">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+
+    <!-- Vierte Ebene -->
+
+    <Element HorizontalePosition="1295" VertikalePosition="1253" Breite="191" Hoehe="3" />
+    <Element HorizontalePosition="1289" VertikalePosition="1294" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1278" VertikalePosition="1332" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1265" VertikalePosition="1373" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1252" VertikalePosition="1414" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1244" VertikalePosition="1447" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1241" VertikalePosition="1494" Breite="1" Hoehe="1" />
+
+    <Element HorizontalePosition="517" VertikalePosition="1414" Breite="2" Hoehe="284" />
+    <Element HorizontalePosition="530" VertikalePosition="1386" Breite="1" Hoehe="1" />
+
+    <Element HorizontalePosition="542" VertikalePosition="1373" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="551" VertikalePosition="1360" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="562" VertikalePosition="1353" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="575" VertikalePosition="1350" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="586" VertikalePosition="1362" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="599" VertikalePosition="1373" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="610" VertikalePosition="1388" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="621" VertikalePosition="1394" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="641" VertikalePosition="1394" Breite="51" Hoehe="3" />
+
+    <Element HorizontalePosition="707" VertikalePosition="1380" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="718" VertikalePosition="1361" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="732" VertikalePosition="1338" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="745" VertikalePosition="1316" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="754" VertikalePosition="1300" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="763" VertikalePosition="1288" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="772" VertikalePosition="1276" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="785" VertikalePosition="1257" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="792" VertikalePosition="1239" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="802" VertikalePosition="1229" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="819" VertikalePosition="1212" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="831" VertikalePosition="1198" Breite="67" Hoehe="3" />
+    <Element HorizontalePosition="904" VertikalePosition="1194" Breite="65" Hoehe="5" />
+    <Element HorizontalePosition="985" VertikalePosition="1204" Breite="52" Hoehe="6" />
+
+    <Element HorizontalePosition="1040" VertikalePosition="1220" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1048" VertikalePosition="1230" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1055" VertikalePosition="1240" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1061" VertikalePosition="1250" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1068" VertikalePosition="1260" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1074" VertikalePosition="1270" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1081" VertikalePosition="1280" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1087" VertikalePosition="1290" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1094" VertikalePosition="1300" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1100" VertikalePosition="1310" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1107" VertikalePosition="1320" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1114" VertikalePosition="1330" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1120" VertikalePosition="1340" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1127" VertikalePosition="1350" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1134" VertikalePosition="1360" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1141" VertikalePosition="1370" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1148" VertikalePosition="1380" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1155" VertikalePosition="1390" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1162" VertikalePosition="1400" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1169" VertikalePosition="1410" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1176" VertikalePosition="1420" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1183" VertikalePosition="1430" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1191" VertikalePosition="1440" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1200" VertikalePosition="1450" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1208" VertikalePosition="1460" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1217" VertikalePosition="1470" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1226" VertikalePosition="1480" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1235" VertikalePosition="1490" Breite="1" Hoehe="1" />
+
+    <Element HorizontalePosition="1501" VertikalePosition="1240" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1520" VertikalePosition="1220" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1539" VertikalePosition="1200" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1558" VertikalePosition="1180" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1577" VertikalePosition="1160" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1598" VertikalePosition="1140" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1618" VertikalePosition="1120" Breite="1" Hoehe="1" />
+
+    <!-- Unterste Ebene -->
+
+    <Element HorizontalePosition="1837" VertikalePosition="1117" Breite="46" Hoehe="4" />
+    <Element HorizontalePosition="1791" VertikalePosition="1074" Breite="50" Hoehe="4" />
+    <Element HorizontalePosition="1749" VertikalePosition="1027" Breite="45" Hoehe="4" />
+    <Element HorizontalePosition="1706" VertikalePosition="982" Breite="46" Hoehe="4" />
+    <Element HorizontalePosition="1660" VertikalePosition="938" Breite="48" Hoehe="5" />
+    <Element HorizontalePosition="1616" VertikalePosition="892" Breite="46" Hoehe="5" />
+    <Element HorizontalePosition="1572" VertikalePosition="847" Breite="45" Hoehe="4" />
+    <Element HorizontalePosition="1435" VertikalePosition="713" Breite="45" Hoehe="3" />
+    <Element HorizontalePosition="1392" VertikalePosition="668" Breite="47" Hoehe="4" />
+
+    <Element HorizontalePosition="1326" VertikalePosition="600" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1298" VertikalePosition="599" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1292" VertikalePosition="583" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1282" VertikalePosition="566" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1264" VertikalePosition="556" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1244" VertikalePosition="564" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1219" VertikalePosition="571" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1196" VertikalePosition="562" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1177" VertikalePosition="545" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1166" VertikalePosition="531" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1156" VertikalePosition="506" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1135" VertikalePosition="494" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1113" VertikalePosition="504" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1088" VertikalePosition="492" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1069" VertikalePosition="487" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1056" VertikalePosition="468" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1041" VertikalePosition="458" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1021" VertikalePosition="461" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="1007" VertikalePosition="463" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="989" VertikalePosition="452" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="975" VertikalePosition="447" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="965" VertikalePosition="430" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="953" VertikalePosition="422" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="944" VertikalePosition="406" Breite="1" Hoehe="1" />
+
+    <Element HorizontalePosition="800" VertikalePosition="408" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="807" VertikalePosition="423" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="813" VertikalePosition="440" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="812" VertikalePosition="467" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="810" VertikalePosition="488" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="806" VertikalePosition="498" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="795" VertikalePosition="504" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="779" VertikalePosition="499" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="766" VertikalePosition="511" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="757" VertikalePosition="525" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="745" VertikalePosition="544" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="742" VertikalePosition="560" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="730" VertikalePosition="561" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="723" VertikalePosition="553" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="706" VertikalePosition="554" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="689" VertikalePosition="571" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="677" VertikalePosition="588" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="643" VertikalePosition="594" Breite="23" Hoehe="4" />
+    <Element HorizontalePosition="637" VertikalePosition="617" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="634" VertikalePosition="638" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="613" VertikalePosition="648" Breite="16" Hoehe="4" />
+    <Element HorizontalePosition="605" VertikalePosition="662" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="600" VertikalePosition="676" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="599" VertikalePosition="693" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="602" VertikalePosition="712" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="578" VertikalePosition="719" Breite="20" Hoehe="4" />
+    <Element HorizontalePosition="573" VertikalePosition="730" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="571" VertikalePosition="754" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="571" VertikalePosition="779" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="559" VertikalePosition="782" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="530" VertikalePosition="774" Breite="21" Hoehe="3" />
+    <Element HorizontalePosition="525" VertikalePosition="783" Breite="1" Hoehe="1" />
+    <Element HorizontalePosition="516" VertikalePosition="794" Breite="1" Hoehe="1" />
+
+    <Element HorizontalePosition="1340" VertikalePosition="623" Breite="549" Hoehe="5" />
+    <Element HorizontalePosition="1885" VertikalePosition="623" Breite="4" Hoehe="1080" />
+    <Element HorizontalePosition="798" VertikalePosition="398" Breite="146" Hoehe="1">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+
+    <Element HorizontalePosition="425" VertikalePosition="801" Breite="76" Hoehe="420">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="True" />
+    </Element>
+
+    <!-- Sarg -->
+
+    <ElementMitBildSequenz HorizontalePosition="1680" VertikalePosition="2610" BilderProSekunde="3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/sarg1.png" />
+            <EinzelBild Quelle="bilder/sarg2.png" />
+            <EinzelBild Quelle="bilder/sarg3.png" />
+            <EinzelBild Quelle="bilder/sarg2.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </ElementMitBildSequenz>
+
+    <!-- Gegner -->
+
+    <ElementMitBildSequenz HorizontalePosition="1380" VertikalePosition="2607">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/Gebiss.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-1500" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="804" VertikalePosition="2611">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/SkullRechts.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1174" VertikalePosition="1710">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/GrueneSchlangeRechts.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-500" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1030" VertikalePosition="1710">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/Wuerfel.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-250" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="705" VertikalePosition="1705" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/Gegner1.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-1000" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1530" VertikalePosition="1705" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/Gegner2.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Energieregel ArtDerKollision="VomSpielerSeitlichGetroffen" Lebensenergie="-1000" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <!-- Kürbis -->
+    
+    <ElementMitBildSequenz HorizontalePosition="1100" VertikalePosition="2338" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/kuerbis.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <VertikaleBewegung Sprunghöhe="10" Sprungzeit="0.5" />
+        </ElementMitBildSequenz.Animation>
+        
+        <Energieregel ArtDerKollision="VomSpielerGetroffen" Lebensenergie="500" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />               
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1658" VertikalePosition="631" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/kuerbis.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <VertikaleBewegung Sprunghöhe="10" Sprungzeit="0.5" />
+        </ElementMitBildSequenz.Animation>
+
+        <Energieregel ArtDerKollision="VomSpielerGetroffen" Lebensenergie="500" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <!-- Blauer Kristall -->
+
+    <ElementMitBildSequenz HorizontalePosition="1477" VertikalePosition="2154" Melodie="melodien/sammeln.mp3" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1381" VertikalePosition="1727" Melodie="melodien/sammeln.mp3" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="609" VertikalePosition="1713" Melodie="melodien/sammeln.mp3" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="622" VertikalePosition="1431" Melodie="melodien/sammeln.mp3" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1771" VertikalePosition="660" Melodie="melodien/sammeln.mp3" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/03/BlauerKristall.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="400" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+</Spielfeld>
+
+    

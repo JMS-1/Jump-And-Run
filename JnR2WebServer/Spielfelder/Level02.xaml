@@ -1,0 +1,133 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+    
+    Kennung="bbbb75cf-709b-4b65-b481-c98999a3aa67"
+    Name="Oogies Höhle Teil 2"
+    Bild="bilder/03/hintergrund.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="450, 1480"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"            
+    >
+        
+    <!-- Obere Ebene -->
+
+    <Element Typ="unsichtbar" Left="405" Bottom="1442" Width="3" Height="400" />
+
+    <Element Typ="unsichtbar" Left="406" Bottom="1438" Width="272" Height="5" />
+    <Element Typ="unsichtbar" Left="916" Bottom="1438" Width="1054" Height="5" />
+    <Element Typ="unsichtbar" Left="1569" Bottom="1556" Width="37" Height="5" />
+    <Element Typ="unsichtbar" Left="1560" Bottom="1552" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1550" Bottom="1543" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1540" Bottom="1534" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1530" Bottom="1525" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1520" Bottom="1516" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1510" Bottom="1507" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1500" Bottom="1498" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1490" Bottom="1489" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1480" Bottom="1480" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1470" Bottom="1471" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1460" Bottom="1462" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1450" Bottom="1453" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1440" Bottom="1444" Width="1" Height="1" />
+
+    <Element Typ="unsichtbar" Left="1602" Bottom="1438" Width="4" Height="122" />
+    <Element Typ="unsichtbar" Left="1808" Bottom="1438" Width="2" Height="122" />
+    <Element Typ="unsichtbar" Left="1970" Bottom="1438" Width="2" Height="522" />
+
+    <BildElement Typ="kuerbis" Left="1919" Bottom="1571" />
+
+    <Element Typ="lava" Left="1608" Bottom="1513" Width="200" Height="1" />
+
+    <!-- Weg zur zweiten Ebene -->
+
+    <Element Typ="unsichtbar" Left="916" Bottom="1278" Width="2" Height="165" />
+    <Element Typ="unsichtbar" Left="916" Bottom="1278" Width="317" Height="4" />
+    <Element Typ="unsichtbar" Left="1265" Bottom="1253" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1300" Bottom="1222" Width="1" Height="1" />
+
+    <Element Typ="unsichtbar" Left="676" Bottom="1115" Width="3" Height="328" />
+    <Element Typ="unsichtbar" Left="676" Bottom="1115" Width="567" Height="4" />
+    <Element Typ="unsichtbar" Left="1250" Bottom="1108" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1260" Bottom="1098" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1270" Bottom="1088" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1280" Bottom="1077" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1290" Bottom="1067" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1300" Bottom="1055" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1310" Bottom="1045" Width="1" Height="1" />
+
+    <!-- Zweite Ebene von oben -->
+
+    <Element Typ="unsichtbar" Left="2244" Bottom="1115" Width="328" Height="5" />
+    <Element Typ="unsichtbar" Left="2569" Bottom="1115" Width="4" Height="351" />
+    <Element Typ="unsichtbar" Left="1921" Bottom="833" Width="4" Height="285" />
+    <Element Typ="unsichtbar" Left="2244" Bottom="674" Width="5" Height="445" />
+    <Element Typ="unsichtbar" Left="1608" Bottom="1115" Width="317" Height="5" />
+    <Element Typ="unsichtbar" Left="1600" Bottom="1110" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1590" Bottom="1100" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1580" Bottom="1090" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1570" Bottom="1080" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1560" Bottom="1070" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1550" Bottom="1060" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1540" Bottom="1050" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1530" Bottom="1040" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="1566" Bottom="831" Width="359" Height="6" />
+
+    <!-- Dritte Ebene von oben -->
+
+    <BildElement Typ="spielkarte" Left="760" Bottom="684" />
+
+    <Element Typ="unsichtbar" Left="889" Bottom="684" Width="38" Height="30" />
+    <Element Typ="unsichtbar" Left="927" Bottom="684" Width="40" Height="23" />
+    <Element Typ="unsichtbar" Left="967" Bottom="684" Width="29" Height="8" />
+
+    <Element Typ="unsichtbar" Left="1487" Bottom="674" Width="761" Height="6" />
+    <Element Typ="unsichtbar" Left="688" Bottom="674" Width="612" Height="6" />
+    <Element Typ="unsichtbar" Left="999" Bottom="832" Width="202" Height="5" />
+    <Element Typ="unsichtbar" Left="999" Bottom="832" Width="5" Height="219" />
+    <Element Typ="unsichtbar" Left="434" Bottom="674" Width="6" Height="322" />
+
+    <Element Typ="unsichtbar" Left="898" Bottom="550" Width="304" Height="5" />
+    <Element Typ="unsichtbar" Left="1614" Bottom="550" Width="957" Height="5" />
+    <Element Typ="unsichtbar" Left="2569" Bottom="550" Width="2" Height="279" />
+
+    <Element Typ="unsichtbar" Left="878" Bottom="565" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="858" Bottom="577" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="838" Bottom="589" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="818" Bottom="601" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="798" Bottom="613" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="778" Bottom="625" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="758" Bottom="636" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="738" Bottom="648" Width="1" Height="1" />
+    <Element Typ="unsichtbar" Left="718" Bottom="660" Width="1" Height="1" />
+
+    <!-- Treppe -->
+    <Element Typ="unsichtbar" Left="433" Bottom="673" Width="49" Height="5" />
+    <Element Typ="unsichtbar" Left="478" Bottom="634" Width="43" Height="4" />
+    <Element Typ="unsichtbar" Left="518" Bottom="596" Width="43" Height="4" />
+    <Element Typ="unsichtbar" Left="559" Bottom="549" Width="41" Height="4" />
+    <Element Typ="unsichtbar" Left="598" Bottom="512" Width="41" Height="4" />
+    <Element Typ="unsichtbar" Left="637" Bottom="479" Width="40" Height="5" />
+    <Element Typ="unsichtbar" Left="675" Bottom="436" Width="46" Height="5" />
+    <Element Typ="unsichtbar" Left="718" Bottom="401" Width="43" Height="3" />
+
+    <!-- Unterste Ebene -->
+
+    <Element Typ="unsichtbar" Left="758" Bottom="352" Width="532" Height="6" />
+    <Element Typ="unsichtbar" Left="1555" Bottom="352" Width="800" Height="6" />
+    <Element Typ="unsichtbar" Left="2568" Bottom="270" Width="3" Height="228" />
+    <Element Typ="unsichtbar" Left="2350" Bottom="270" Width="3" Height="82" />
+
+    <BildElement Typ="seele" Left="1064" Bottom="375" />
+    <BildElement Typ="blauerkristall" Left="1296" Bottom="392" />
+    <BildElement Typ="blauerkristall" Left="1399" Bottom="437" />
+    <BildElement Typ="blauerkristall" Left="1498" Bottom="394" />
+    <BildElement Typ="schlange" Left="1570" Bottom="363" />
+
+    <Element Typ="lava" Left="1250" Bottom="330" Width="350" Height="1" />
+
+    <Element ElementArt="Ausgang" Left="2353" Bottom="270" Width="215" Height="1" />
+
+</Spielfeld>
+
+    

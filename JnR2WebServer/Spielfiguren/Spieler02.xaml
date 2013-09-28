@@ -1,0 +1,27 @@
+﻿<Figur xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+                     
+    SprungStaerke="100"
+    SpruengeNacheinander="2"
+    BilderProSekunde="10"
+    MaximaleGeschwindigkeit="5"
+    Name="Doctor Who"
+                     
+>
+    
+    <Figur.BilderRuhend>
+        <Bild Quelle="bilder/spieler2ruhend.png" />
+    </Figur.BilderRuhend>
+
+    <Figur.BilderNachLinks>
+        <Bild Quelle="bilder/spieler2ruhend.png" />
+    </Figur.BilderNachLinks>
+
+    <Figur.BilderNachRechts>
+        <Bild Quelle="bilder/spieler2ruhend.png" />
+    </Figur.BilderNachRechts>
+
+    <Figur.BilderImSprung>
+        <Bild Quelle="bilder/spieler2ruhend.png" />
+    </Figur.BilderImSprung>
+    
+</Figur>

@@ -1,0 +1,8 @@
+<Spiel xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+             
+    SichtfensterBreite="800"
+    SichtfensterHoehe="600"
+    LevelIndex="1"
+
+ />
+

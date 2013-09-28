@@ -1,0 +1,77 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:self="clr-namespace:JMS.JnRV2.Anzeige.Praesentation">
+
+    <Style TargetType="self:SpielAnzeige">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="self:SpielAnzeige">
+                    <Grid Width="{Binding Breite}" Height="{Binding Hoehe}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Canvas x:Name="spielbereich" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                            <self:SpielfeldAnzeige x:Name="spielfeld" DataContext="{Binding Spielfeld}">
+                                <self:SpielfeldAnzeige.RenderTransform>
+                                    <TranslateTransform X="{Binding ElementName=spielbereich, Path=DataContext.HorizontaleVerschiebung}" Y="{Binding ElementName=spielbereich, Path=DataContext.VertikaleVerschiebung}" />
+                                </self:SpielfeldAnzeige.RenderTransform>
+                            </self:SpielfeldAnzeige>
+
+                            <Canvas.Clip>
+                                <RectangleGeometry Rect="0,0,1,1">
+                                    <RectangleGeometry.Transform>
+                                        <ScaleTransform ScaleX="{Binding Breite}" ScaleY="{Binding Hoehe}" />
+                                    </RectangleGeometry.Transform>
+                                </RectangleGeometry>
+                            </Canvas.Clip>
+                        </Canvas>
+
+                        <Border x:Name="fokus" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="White" BorderThickness="1" Visibility="Collapsed" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+
+                        <self:PunkteStandAnzeige DataContext="{Binding Steuerung}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+
+                        <Border x:Name="schlussbild" Grid.Row="1" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="4" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="{Binding Steuerung.SichtbarkeitSchlussbild, FallbackValue=Collapsed}" >
+                            <Border.Resources>
+                                <Storyboard x:Name="SchlussbildAnimation" >
+                                    <ColorAnimation 
+                                        Storyboard.TargetName="schlussbild"
+                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                        RepeatBehavior="Forever"
+                                        BeginTime="00:00:00"
+                                        Duration="00:00:01"
+                                        AutoReverse="True" 
+                                        From="Black" 
+                                        To="White" />
+                                </Storyboard>
+                            </Border.Resources>
+
+                            <Viewbox>
+                                <self:BildAnzeigeMitNeustartOption 
+                                    DataContext="{Binding Steuerung.Schlussbild}" 
+                                    ToolTipService.ToolTip="Zum Neustart einfach hier klicken..."
+                                    BildSkalierung="None">
+                                </self:BildAnzeigeMitNeustartOption>
+                            </Viewbox>
+                        </Border>
+
+                        <self:ErgebnisAnzeige Visibility="{Binding Sichtbarkeit, FallbackValue=Collapsed}" DataContext="{Binding Steuerung.Ergebnis}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
+
+                        <MediaElement x:Name="musik" AutoPlay="True" Volume="1.0" IsMuted="False" Width="0" Height="0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+
+                        <Image x:Name="cheat" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

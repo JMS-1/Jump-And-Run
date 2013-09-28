@@ -1,0 +1,65 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kennung="630ae2f7-f7e8-4392-a6d1-98723b72cf2a"
+    Beschreibung="[Test]"
+    Bild="bilder/developer.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1600, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"                       
+    >
+
+    <Element HorizontalePosition="420" VertikalePosition="300" Breite="4" Hoehe="400">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="True" />
+    </Element>
+
+    <Element HorizontalePosition="2000" VertikalePosition="300" Breite="4" Hoehe="400"/>
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="10000" Hoehe="1" />
+    <Element HorizontalePosition="650" VertikalePosition="350" Breite="50" Hoehe="1" />
+    <Element HorizontalePosition="700" VertikalePosition="400" Breite="50" Hoehe="1" />
+    <Element HorizontalePosition="750" VertikalePosition="450" Breite="50" Hoehe="1" />
+    <Element HorizontalePosition="800" VertikalePosition="500" Breite="300" Hoehe="1" />
+
+    <Element HorizontalePosition="1700" VertikalePosition="340" Breite="5" Hoehe="5" AnfänglichUnsichtbar="False">
+        <Erscheineregel Name="Blink" ArtDerKollision="VomSpielerGetroffen" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <ElementMitBildSequenz HorizontalePosition="1900" VertikalePosition="310" AnfänglichUnsichtbar="True" Name="Blink">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/kuerbis.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <HorizontaleBewegung Geschwindigkeit="1" VonLinksNachRechts="False"/>
+        </ElementMitBildSequenz.Animation>
+
+        <Enderegel ArtDerKollision="SpielerIstGetroffen" Gewonnen="False" />
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+        <Verschwinderegel ArtDerKollision="Getroffen" WasSollVerschwinden="Selbst" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="810" VertikalePosition="600" Faellt="True">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/kuerbis.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <BewegungRelativZurSpielfigur Angriff="true" HorizontaleGeschwindigkeit="1" />
+        </ElementMitBildSequenz.Animation>
+
+        <Enderegel ArtDerKollision="SpielerIstGetroffen" Gewonnen="False" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen"/>
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1110" VertikalePosition="310">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/04/wuerfel.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </ElementMitBildSequenz>
+
+</Spielfeld>

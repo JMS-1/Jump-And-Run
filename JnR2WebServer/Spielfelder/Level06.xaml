@@ -1,0 +1,196 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+    
+    Kennung="a2d0796d-e980-4651-9cf2-75843081e134"
+    Name="Kristall-Felsen"
+    Bild="bilder/spielfeld1.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="3740, 2239"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"
+         
+    >
+
+    <!-- InitialePosition="3740, 2239" -->
+
+    <!-- Das ist der Startbereich -->
+
+    <Element Typ="unsichtbar" Left="3685" Bottom="2197" Width="97" Height="7" />
+    <Element Typ="unsichtbar" Left="3485" Bottom="2198" Width="110" Height="6" />
+    <Element Typ="unsichtbar" Left="3597" Bottom="2205" Width="12" Height="174" />
+
+    <!-- Das ist die erste Treppe rechts oben -->
+
+    <Element Typ="treppe1stufe" Left="3662" Bottom="2180" />
+    <Element Typ="treppe1stufe" Left="3651" Bottom="2159" />
+    <Element Typ="treppe1stufe" Left="3642" Bottom="2137" />
+    <Element Typ="treppe1stufe" Left="3633" Bottom="2115" />
+    <Element Typ="treppe1stufe" Left="3623" Bottom="2094" />
+    <Element Typ="treppe1stufe" Left="3613" Bottom="2071" />
+    <Element Typ="treppe1stufe" Left="3604" Bottom="2050" />
+    <Element Typ="treppe1stufe" Left="3594" Bottom="2028" />
+    <Element Typ="treppe1stufe" Left="3585" Bottom="2006" />
+    <Element Typ="treppe1stufe" Left="3575" Bottom="1984" />
+    <Element Typ="treppe1stufe" Left="3565" Bottom="1962" />
+    <Element Typ="treppe1stufe" Left="3556" Bottom="1940" />
+    <Element Typ="treppe1stufe" Left="3545" Bottom="1917" />
+
+    <Element Typ="treppe1block" Left="3580" Bottom="2170" />
+    <Element Typ="treppe1block" Left="3560" Bottom="2130" />
+    <Element Typ="treppe1block" Left="3540" Bottom="2090" />
+    <Element Typ="treppe1block" Left="3520" Bottom="2050" />
+    <Element Typ="treppe1block" Left="3500" Bottom="2010" Height="180" />
+
+    <!-- Die erste Ebene unter der Treppe -->
+    <Element Typ="unsichtbar" Left="3010" Bottom="1884" Width="537" Height="20" />
+
+    <BildElement Typ="skorpiongruenrechts" Left="3300" Bottom="1904" />
+    <BildElement Typ="skorpiongruenlinks" Left="3010" Bottom="1904" />
+
+    <!-- Der große Kristall -->
+    <Element Typ="unsichtbar" Left="2672" Bottom="1894" Width="247" Height="9" />
+    <Element Typ="unsichtbar" Left="2680" Bottom="2005" Width="117" Height="100" />
+    <Element Typ="unsichtbar" Left="2631" Bottom="1642" Width="64" Height="10" />
+    <Element Typ="unsichtbar" Left="2695" Bottom="1642" Width="10" Height="250" />
+
+    <Element Typ="treppe1stufe" Left="2580" Bottom="1680" />
+    <Element Typ="treppe1stufe" Left="2570" Bottom="1720" />
+    <Element Typ="treppe1stufe" Left="2560" Bottom="1760" />
+    <Element Typ="treppe1stufe" Left="2550" Bottom="1800" />
+    <Element Typ="treppe1stufe" Left="2540" Bottom="1840" />
+    <Element Typ="treppe1stufe" Left="2530" Bottom="1880" />
+    <Element Typ="treppe1stufe" Left="2520" Bottom="1920" />
+    <Element Typ="treppe1stufe" Left="2510" Bottom="1960" />
+    <Element Typ="treppe1stufe" Left="2500" Bottom="2000" Height="200" />
+
+    <Element Typ="treppe1stufe" Left="2591" Bottom="1964" />
+
+    <Element Typ="unsichtbar" Left="2802" Bottom="1197" Width="13" Height="81" />
+    <Element Typ="unsichtbar" Left="2809" Bottom="1291" Width="39" Height="154" />
+    <Element Typ="unsichtbar" Left="2845" Bottom="1464" Width="33" Height="127" />
+    <Element Typ="unsichtbar" Left="2876" Bottom="1596" Width="43" Height="296" />
+
+    <BildElement Typ="item" Left="2625" Bottom="1660" />
+    <BildElement Typ="item" Left="2665" Bottom="1660" />
+    <BildElement Typ="goldMuenze" Left="2625" Bottom="1700" />
+    <BildElement Typ="goldMuenze" Left="2665" Bottom="1700" />
+    <BildElement Typ="goldMuenze" Left="2625" Bottom="1740" />
+    <BildElement Typ="goldMuenze" Left="2665" Bottom="1740" />
+    <BildElement Typ="silberMuenze" Left="2625" Bottom="1780" />
+    <BildElement Typ="silberMuenze" Left="2665" Bottom="1780" />
+    <BildElement Typ="silberMuenze" Left="2625" Bottom="1820" />
+    <BildElement Typ="silberMuenze" Left="2665" Bottom="1820" />
+    <BildElement Typ="silberMuenze" Left="2625" Bottom="1860" />
+    <BildElement Typ="silberMuenze" Left="2665" Bottom="1860" />
+
+    <!-- Die Ebene unter dem großen Kristall -->
+    <Element Typ="unsichtbar" Left="2831" Bottom="1188" Width="432" Height="6" />
+    <Element Typ="unsichtbar" Left="3050" Bottom="1350" Width="10" Height="500" />
+
+    <Element Typ="unsichtbar" Left="2914" Bottom="1195" Width="34" Height="10" />
+    <Element Typ="unsichtbar" Left="2957" Bottom="1195" Width="63" Height="14" />
+
+    <BildElement Typ="skorpionorangerechts" Left="3160" Bottom="1194" />
+
+    <!-- Die Treppe hinter dem großen Kritall -->
+    <Element Typ="unsichtbar" Left="3236" Bottom="1151" Width="27" Height="41" />
+    <Element Typ="unsichtbar" Left="3265" Bottom="1114" Width="39" Height="43" />
+    <Element Typ="unsichtbar" Left="3307" Bottom="1086" Width="33" Height="32" />
+    <Element Typ="unsichtbar" Left="3342" Bottom="1055" Width="31" Height="33" />
+    <Element Typ="unsichtbar" Left="3375" Bottom="1030" Width="27" Height="27" />
+    <Element Typ="unsichtbar" Left="3404" Bottom="1005" Width="22" Height="25" />
+    <Element Typ="unsichtbar" Left="3428" Bottom="983" Width="24" Height="26" />
+    <Element Typ="unsichtbar" Left="3455" Bottom="958" Width="25" Height="30" />
+    <Element Typ="unsichtbar" Left="3481" Bottom="962" Width="82" Height="2" />
+
+    <!-- Der Zugang zum unteren Spielbereich -->
+    <Element Typ="unsichtbar" Left="3147" Bottom="777" Width="410" Height="2" />
+    <Element Typ="unsichtbar" Left="3554" Bottom="777" Width="28" Height="34" />
+    <Element Typ="unsichtbar" Left="3578" Bottom="811" Width="32" Height="34" />
+    <Element Typ="unsichtbar" Left="3605" Bottom="847" Width="32" Height="35" />
+    <Element Typ="unsichtbar" Left="3631" Bottom="884" Width="34" Height="35" />
+    <Element Typ="unsichtbar" Left="3660" Bottom="921" Width="120" Height="43" />
+
+    <!-- Der optionale Sonderbereich -->
+    <Element Typ="unsichtbar" Left="2889" Bottom="865" Width="317" Height="8" />
+    <Element Typ="unsichtbar" Left="2290" Bottom="928" Width="618" Height="7" />
+
+    <Element Typ="unsichtbar" Left="1958" Bottom="716" Width="304" Height="6" />
+    <Element Typ="unsichtbar" Left="1957" Bottom="722" Width="4" Height="600" />
+
+    <BildElement Typ="skorpionorangelinks" Left="2900" Bottom="873" />
+    <BildElement Typ="skorpionrotrechtsgross" Left="2150" Bottom="719" />
+    <BildElement Typ="skorpionorangelinksnachunten" Left="1920" Bottom="870" />
+    <BildElement Typ="itemgegner" Left="2300" Bottom="930" />
+
+    <BildElement Typ="goldMuenze" Left="1965" Bottom="730" />
+    <BildElement Typ="item" Left="2005" Bottom="730" />
+    <BildElement Typ="silberMuenze" Left="2045" Bottom="730" />
+    <BildElement Typ="item" Left="1965" Bottom="770" />
+    <BildElement Typ="silberMuenze" Left="2005" Bottom="770" />
+    <BildElement Typ="silberMuenze" Left="1965" Bottom="810" />
+
+    <!-- Die Sprossenleiter ganz nach unten -->
+    <Element Typ="treppe1stufe" Left="3106" Bottom="757" />
+    <Element Typ="treppe1stufe" Left="3073" Bottom="721" />
+    <Element Typ="treppe1stufe" Left="3039" Bottom="685" />
+    <Element Typ="treppe1stufe" Left="2996" Bottom="648" />
+    <Element Typ="treppe1stufe" Left="2961" Bottom="613" />
+    <Element Typ="treppe1stufe" Left="2930" Bottom="581" />
+    <Element Typ="treppe1stufe" Left="2899" Bottom="546" />
+    <Element Typ="treppe1stufe" Left="2862" Bottom="512" />
+
+    <!-- Ganz unten rechts -->
+    <Element Typ="unsichtbar" Left="2497" Bottom="480" Width="352" Height="5" />
+    <Element Typ="treppe3block" Left="2389" Bottom="368" />
+    <Element Typ="treppe3block" Left="2397" Bottom="378" />
+    <Element Typ="treppe3block" Left="2406" Bottom="388" />
+    <Element Typ="treppe3block" Left="2415" Bottom="398" />
+    <Element Typ="treppe3block" Left="2424" Bottom="408" />
+    <Element Typ="treppe3block" Left="2433" Bottom="418" />
+    <Element Typ="treppe3block" Left="2442" Bottom="428" />
+    <Element Typ="treppe3block" Left="2451" Bottom="438" />
+    <Element Typ="treppe3block" Left="2460" Bottom="448" />
+    <Element Typ="treppe3block" Left="2469" Bottom="458" />
+    <Element Typ="treppe3block" Left="2478" Bottom="468" />
+    <Element Typ="treppe3block" Left="2487" Bottom="478" />
+
+    <BildElement Typ="skorpionorangerechts" Left="2520" Bottom="485" />
+
+    <!-- Lava -->
+    <Element Typ="lava" Left="1830" Bottom="352" Width="570" />
+    <Element Typ="unsichtbar" Left="2026" Bottom="334" Width="229" Height="29" />
+
+    <!-- Zum Ausgang hin -->
+    <Element Typ="treppe3block" Left="1836" Bottom="368" />
+    <Element Typ="treppe3block" Left="1825" Bottom="378" />
+    <Element Typ="treppe3block" Left="1814" Bottom="388" />
+    <Element Typ="treppe3block" Left="1800" Bottom="398" />
+    <Element Typ="treppe3block" Left="1789" Bottom="408" />
+    <Element Typ="treppe3block" Left="1778" Bottom="418" />
+    <Element Typ="treppe3block" Left="1767" Bottom="428" />
+    <Element Typ="treppe3block" Left="1756" Bottom="438" />
+    <Element Typ="treppe3block" Left="1745" Bottom="448" />
+    <Element Typ="treppe3block" Left="1734" Bottom="458" />
+    <Element Typ="treppe3block" Left="1725" Bottom="468" />
+    <Element Typ="treppe3block" Left="1714" Bottom="478" />
+    <Element Typ="unsichtbar" Left="422" Bottom="480" Width="1291" Height="10" />
+
+    <BildElement Typ="skorpionorangerechts" Left="900" Bottom="490" />
+    <BildElement Typ="skorpionorangelinks" Left="1300" Bottom="490" />
+
+    <BildElement Typ="edelstein" Left="1170" Bottom="485" />
+    <BildElement Typ="kristall" Left="1460" Bottom="485" />
+
+    <!-- Unterer Kristall -->
+    <Element Typ="unsichtbar" Left="1500" Bottom="587" Width="226" Height="96" />
+
+    <BildElement Typ="skorpionrotrechtsnachunten" Left="1610" Bottom="860" />
+
+    <!-- Der Ausgang -->
+    <Element ElementArt="Ausgang" Left="422" Bottom="492" Width="90" Height="40" />
+    <Element Typ="unsichtbar" Left="422" Bottom="534" Width="80" Height="42" />
+    <Element Typ="unsichtbar" Left="422" Bottom="580" Width="110" Height="200" />
+    <Element Typ="unsichtbar" Left="622" Bottom="490" Width="39" Height="77" />
+    <Element Typ="unsichtbar" Left="661" Bottom="490" Width="109" Height="55" />
+</Spielfeld>

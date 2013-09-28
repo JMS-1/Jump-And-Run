@@ -1,0 +1,19 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:self="clr-namespace:JMS.JnRV2.Anzeige.Praesentation">
+
+    <Style TargetType="self:BildAnzeige">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="self:BildAnzeige">
+                    <Grid>
+                        <Image Source="{Binding Bild}" Width="{Binding Breite}" Height="{Binding Hoehe}" Stretch="{TemplateBinding BildSkalierung}" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <Border BorderBrush="Red" BorderThickness="{TemplateBinding BildUmrahmung}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

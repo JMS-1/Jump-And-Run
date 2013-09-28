@@ -1,0 +1,26 @@
+﻿<Figur xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
+                     
+    SprungStaerke="100"
+    SpruengeNacheinander="2"
+    BilderProSekunde="8"
+    MaximaleGeschwindigkeit="5"
+    Name="Pumpkin King"    
+>
+    
+    <Figur.BilderRuhend>
+        <Bild Quelle="bilder/figuren/pumpkinkingruhend.png" />
+    </Figur.BilderRuhend>
+
+    <Figur.BilderNachLinks>
+        <Bild Quelle="bilder/figuren/pumpkinkinglinks.png" />
+    </Figur.BilderNachLinks>
+
+    <Figur.BilderNachRechts>
+        <Bild Quelle="bilder/figuren/pumpkinkingrechts.png" />
+    </Figur.BilderNachRechts>
+
+    <Figur.BilderImSprung>
+        <Bild Quelle="bilder/figuren/pumpkinkingsprung.png" />
+    </Figur.BilderImSprung>
+    
+</Figur>
