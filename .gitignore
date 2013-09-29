@@ -46,6 +46,7 @@ build/
 *.log
 *.scc
 *.pubxml
+*.xap
 
 # Visual C++ cache files
 ipch/
