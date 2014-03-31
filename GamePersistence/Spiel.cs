@@ -24,6 +24,11 @@ namespace JMS.JnRV2.Ablage
         public int LevelIndex { get; set; }
 
         /// <summary>
+        /// Ein Ausdruck zur Vorauswahl von Spielfeldern.
+        /// </summary>
+        public string SpielfeldKategorien { get; set; }
+
+        /// <summary>
         /// Das zugehörige Spielfeld.
         /// </summary>
         public Spielfeld Spielfeld { get; internal set; }

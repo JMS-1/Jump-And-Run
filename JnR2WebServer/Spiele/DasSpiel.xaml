@@ -1,8 +1,9 @@
-<Spiel xmlns="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
-             
+<Spiel xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"       
+
+    SpielfeldKategorien="Regulär, Demo"
     SichtfensterBreite="800"
     SichtfensterHoehe="600"
     LevelIndex="1"
-
- />
+       
+/>
 

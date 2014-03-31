@@ -34,6 +34,11 @@ namespace JMS.JnRV2.Ablage
         public Point InitialePosition { get; set; }
 
         /// <summary>
+        /// Die Art des Spielfelds.
+        /// </summary>
+        public string Kategorie { get; set; }
+
+        /// <summary>
         /// Die anfängliche Lebensenergie.
         /// </summary>
         public int InitialeLebensenergie { get; set; }

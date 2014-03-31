@@ -1,5 +1,6 @@
 ﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
     
+    Kategorie="Demo"
     Kennung="630ae2f7-f7e8-4392-a6d1-98723b72cf2a"
     Beschreibung="[Test]"
     Bild="bilder/developer.png"
@@ -7,9 +8,9 @@
     BildGewonnen="bilder/gamewon.png"
     InitialePosition="1600, 400"
     MaximaleSprungStaerke="100"
-    MaximaleGeschwindigkeit="5"                       
+    MaximaleGeschwindigkeit="5"     
     >
-
+    
     <Element HorizontalePosition="420" VertikalePosition="300" Breite="4" Hoehe="400">
         <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="True" />
     </Element>

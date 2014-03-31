@@ -272,7 +272,7 @@ namespace JMS.JnRV2.Ablauf.Kollisionen
         /// Ermittelt das am besten passende Hindernis aus einer Liste.
         /// </summary>
         /// <param name="hindernisse">Eine Liste von Hindernissen.</param>
-        /// <param name="eigenschaft">Liest eine Eigenschaft aus..</param>
+        /// <param name="eigenschaft">Liest eine Eigenschaft aus.</param>
         /// <returns>Das am besten passende Hindernis</returns>
         private static Hindernis BestesHindernisFinden( IEnumerable<Hindernis> hindernisse, Func<Hindernis, GenaueZahl> eigenschaft )
         {

@@ -5,7 +5,6 @@
         xmlns:moving="clr-namespace:JMS.JnRV2.Ablage.V1;assembly=GamePersistence"
         >
 
-
     <Style x:Key="unsichtbar" TargetType="models:Element">
         <Setter Property="ElementArt" Value="Sperre" />
     </Style>
