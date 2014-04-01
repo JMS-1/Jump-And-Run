@@ -155,6 +155,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
+    <None Include="..\JnR2WebServer\Spiele\DemoUmgebung.xaml">
+      <Link>Zum Editieren\Spiele\DemoUmgebung.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
     <Page Include="SpielAuswahl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

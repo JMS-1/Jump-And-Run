@@ -68,6 +68,8 @@ namespace JMS.JnRV2.Start
             public bool CanExecute( object parameter )
             {
                 // Fragen wir mal die Auswahl
+                if (m_information.SpielKonfiguration == null)
+                    return false;
                 if (m_information.AktuelleSpielfigur == null)
                     return false;
                 if (m_information.AktuellesSpielfeld == null)
@@ -121,6 +123,11 @@ namespace JMS.JnRV2.Start
         private static readonly string _AktuellesSpielfeld = ErweiterungenZurVereinfachung.ErmitteleDenNamenEinerEigenschaft( ( AuswahlInformationen i ) => i.AktuellesSpielfeld );
 
         /// <summary>
+        /// Die Konfiguration des Spielumfelds.
+        /// </summary>
+        private static readonly string _SpielKonfiguration = ErweiterungenZurVereinfachung.ErmitteleDenNamenEinerEigenschaft( ( AuswahlInformationen i ) => i.SpielKonfiguration );
+
+        /// <summary>
         /// Die Eigenschaft mit dem aktuellen Spiel.
         /// </summary>
         public static readonly string _AktuellesSpiel = ErweiterungenZurVereinfachung.ErmitteleDenNamenEinerEigenschaft( ( AuswahlInformationen i ) => i.AktuellesSpiel );
@@ -171,6 +178,11 @@ namespace JMS.JnRV2.Start
         /// <summary>
         /// Alle Spielfelder.
         /// </summary>
+        private SpielfeldMitInformation[] m_spielfelder;
+
+        /// <summary>
+        /// Alle Spielfelder.
+        /// </summary>
         public SpielfeldMitInformation[] Spielfelder { get; private set; }
 
         /// <summary>
@@ -217,6 +229,28 @@ namespace JMS.JnRV2.Start
         public Anzeige.PraesentationsModelle.Spiel AktuellesSpiel { get; private set; }
 
         /// <summary>
+        /// Die Konfiuguration des vorgegebenen Spiels.
+        /// </summary>
+        private Spiel m_spiel;
+
+        /// <summary>
+        /// Die Konfiuguration des vorgegebenen Spiels.
+        /// </summary>
+        public Spiel SpielKonfiguration
+        {
+            get
+            {
+                // Report
+                return m_spiel;
+            }
+            set
+            {
+                // Update
+                PropertyChanged.EigenschaftVerändern( this, _SpielKonfiguration, ref m_spiel, value );
+            }
+        }
+
+        /// <summary>
         /// Erzeugt einen neuen Satz von Informationen.
         /// </summary>
         public AuswahlInformationen()
@@ -227,7 +261,8 @@ namespace JMS.JnRV2.Start
             Figuren = new SpielfigurMitInformation[0];
             Starten = new AuswahlBefehl( this );
 
-            // Mit dem Laden der Spielfiguren beginnen
+            // Alles aynchron laden
+            DateiLader.SpielLaden( NameDesSpiels, SpielWurdeGeladen );
             DateiLader.SpielfigurenLaden( SpielfigurenWurdenGeladen );
             DateiLader.SpielfelderLaden( SpielfelderWurdenGeladen );
         }
@@ -261,7 +296,25 @@ namespace JMS.JnRV2.Start
         {
             // Wandeln
             if (spielfelder != null)
-                Spielfelder = spielfelder.Select( spielfeld => new SpielfeldMitInformation( spielfeld ) ).ToArray();
+                m_spielfelder = spielfelder.Select( spielfeld => new SpielfeldMitInformation( spielfeld ) ).ToArray();
+
+            // Auswahlliste vorbereiten
+            SpielFelderAuswahlVorbereiten();
+        }
+
+        /// <summary>
+        /// Bereitet die Auswahlliste der Spielfelder vor.
+        /// </summary>
+        private void SpielFelderAuswahlVorbereiten()
+        {
+            // Geht noch nicht
+            if (m_spielfelder == null)
+                return;
+            if (SpielKonfiguration == null)
+                return;
+
+            // Übernehmen
+            Spielfelder = m_spielfelder.Where( spielfeld => SpielKonfiguration.SpielfeldIstGültig( spielfeld.Konfiguration ) ).ToArray();
 
             // Blind melden
             PropertyChanged.EigenschaftWurdeVerändert( this, _Spielfelder );
@@ -289,14 +342,28 @@ namespace JMS.JnRV2.Start
             if (spielfeld == null)
                 return;
 
+            // Spielfigur ermitteln
+            var spielfigur = AktuelleSpielfigur;
+            if (spielfigur == null)
+                return;
+
             // Ladevorgang läuft nun
             SichtbarkeitLadebalken = Visibility.Visible;
 
             // Informieren
             PropertyChanged.EigenschaftWurdeVerändert( this, _SichtbarkeitLadebalken );
 
-            // Ladevorgang für das Spiel anstossen
-            DateiLader.SpielLaden( NameDesSpiels, spielfeld.Konfiguration, SpielWurdeGeladen );
+            // Ausgewähltes Spielfeld aktivieren
+            SpielKonfiguration.Spielfeld = spielfeld.Konfiguration;
+
+            // Präsentation des Spiels erzeugen
+            AktuellesSpiel = SpielKonfiguration.ErzeugePräsentation( spielfigur.Konfiguration );
+
+            // Jetzt müssen wir nur noch auf die Simulation warten
+            AktuellesSpiel.Steuerung.PropertyChanged += SimulationWurdeVerändert;
+
+            // Einmal testen
+            BereitschaftDerSimulationPrüfen();
         }
 
         /// <summary>
@@ -305,23 +372,12 @@ namespace JMS.JnRV2.Start
         /// <param name="spiel">Das neu geladene Spiel.</param>
         private void SpielWurdeGeladen( Spiel spiel )
         {
-            // Ups, das war wohl nichts
-            if (spiel == null)
-                return;
+            // Merken
+            if (spiel != null)
+                SpielKonfiguration = spiel;
 
-            // Spielfigur ermitteln
-            var spielfigur = AktuelleSpielfigur;
-            if (spielfigur == null)
-                return;
-
-            // Präsentation des Spiels erzeugen
-            AktuellesSpiel = spiel.ErzeugePräsentation( spielfigur.Konfiguration );
-
-            // Jetzt müssen wir nur noch auf die Simulation warten
-            AktuellesSpiel.Steuerung.PropertyChanged += SimulationWurdeVerändert;
-
-            // Einmal testen
-            BereitschaftDerSimulationPrüfen();
+            // Auswahlliste vorbereiten
+            SpielFelderAuswahlVorbereiten();
         }
 
         /// <summary>

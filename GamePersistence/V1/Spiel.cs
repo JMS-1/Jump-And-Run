@@ -16,10 +16,5 @@ namespace JMS.JnRV2.Ablage.V1
         /// Die Höhe des Sichtfensters ins Spielfeld.
         /// </summary>
         public double SichtfensterHoehe { get; set; }
-
-        /// <summary>
-        /// Die bei 1 beginnende laufende Nummer des Spielfelds.
-        /// </summary>
-        public int LevelIndex { get; set; }
     }
 }

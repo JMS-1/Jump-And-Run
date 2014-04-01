@@ -128,6 +128,7 @@
     <Content Include="ClientBin\Bilder\wolke4.png" />
     <Content Include="ClientBin\Melodien\sammeln.mp3" />
     <Content Include="ClientBin\TheGame.xap" />
+    <Content Include="demo.html" />
     <Content Include="index1.html" />
     <Content Include="Silverlight.js" />
     <Content Include="index.html" />
@@ -217,6 +218,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Spielfelder\Level05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spiele\DemoUmgebung.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Content>

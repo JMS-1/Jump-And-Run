@@ -229,7 +229,6 @@ namespace JMS.JnRV2.Ablage
         public static void SpielfelderLaden( Action<Spielfeld[]> alleFelderGeladen )
         {
             // Durchreichen
-            // Nun brauchen wir die Konfiguration
             KonfigurationLaden( () => ListeLaden<Spielfeld, V1.Spielfeld>( FormatFürDateinamenVonSpielfeldern, alleFelderGeladen ) );
         }
 
@@ -237,9 +236,8 @@ namespace JMS.JnRV2.Ablage
         /// Lädt ein einzelnes Spiel und das damit verbundene Spielfeld.
         /// </summary>
         /// <param name="nameDesSpiels">Der Name des Spiels.</param>
-        /// <param name="vorbereitetesSpielfeld">Ein bereits geladenes Spielfeld, das mit dem Spiel verbunden werden soll.</param>
         /// <param name="spielGeladen">Wird aufgerufen, sobald das Spiel geladen wurde.</param>
-        public static void SpielLaden( string nameDesSpiels, Spielfeld vorbereitetesSpielfeld, Action<Spiel> spielGeladen )
+        public static void SpielLaden( string nameDesSpiels, Action<Spiel> spielGeladen )
         {
             // Prüfen
             if (string.IsNullOrEmpty( nameDesSpiels ))
@@ -248,46 +246,7 @@ namespace JMS.JnRV2.Ablage
                 throw new ArgumentNullException( "spielGeladen" );
 
             // Das passiert im Hintergrund
-            ObjektAusXamlDatei<Spiel, V1.Spiel>( string.Format( "Spiele/{0}", nameDesSpiels ),
-                spiel =>
-                {
-                    // Das war wohl nichts
-                    if (spiel == null)
-                    {
-                        // Melden
-                        spielGeladen( null );
-
-                        // Fertig
-                        return;
-                    }
-
-                    // Alles schon da
-                    if (vorbereitetesSpielfeld != null)
-                    {
-                        // Nutzen wir das
-                        spiel.Spielfeld = vorbereitetesSpielfeld;
-
-                        // Melden
-                        spielGeladen( spiel );
-
-                        // Fertig
-                        return;
-                    }
-
-                    // Nun müssen wir noch das Spielfeld laden
-                    Action spielfeldLaden = () => ObjektAusXamlDatei<Spielfeld, V1.Spielfeld>( string.Format( FormatFürDateinamenVonSpielfeldern, spiel.LevelIndex ),
-                        spielfeld =>
-                        {
-                            // Verbinden
-                            spiel.Spielfeld = spielfeld;
-
-                            // Melden
-                            spielGeladen( spiel );
-                        } );
-
-                    // Nun brauchen wir die Konfiguration
-                    KonfigurationLaden( spielfeldLaden );
-                } );
+            ObjektAusXamlDatei<Spiel, V1.Spiel>( string.Format( "Spiele/{0}", nameDesSpiels ), spielGeladen );
         }
 
         /// <summary>

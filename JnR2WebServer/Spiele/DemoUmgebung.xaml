@@ -1,5 +1,6 @@
 <Spiel xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"       
 
+    SpielfeldKategorien="Demo"
     SichtfensterBreite="800"
     SichtfensterHoehe="600"
        

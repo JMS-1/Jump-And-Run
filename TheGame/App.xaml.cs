@@ -50,11 +50,11 @@ namespace JMS.JnRV2.Start
                 // Das merken wir uns erst einmal
                 m_parameter = e;
 
-                // Die Arbeitsumgebung anlegen
-                Application.Current.Resources.Add( AuswahlName, new AuswahlInformationen() );
-
                 // Statische Konfiguration auswerten
                 AuswahlInformationen.NameDesSpiels = e.InitParams["Spiel"];
+
+                // Die Arbeitsumgebung anlegen
+                Application.Current.Resources.Add( AuswahlName, new AuswahlInformationen() );
 
                 // Dynamische Konfiguration auswerten
                 string testRahmenAnzeigen;
