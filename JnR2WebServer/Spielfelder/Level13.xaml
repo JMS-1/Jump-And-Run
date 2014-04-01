@@ -1,0 +1,27 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="2c27d8cc-eb22-4118-9809-97e73c54bb05"
+    Beschreibung="Schritt 6 - Nachlaufen"
+    Bild="bilder/demo/back01.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <ElementMitBildSequenz HorizontalePosition="1100" VertikalePosition="301">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/huepfer1.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <BewegungRelativZurSpielfigur Angriff="True" HorizontaleGeschwindigkeit="2" />
+        </ElementMitBildSequenz.Animation>
+    </ElementMitBildSequenz>
+
+</Spielfeld>

@@ -1,0 +1,23 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="a57bb4ae-5a21-4d11-80b0-73bbf80c37a1"
+    Beschreibung="Schritt 4 - Hüpfen üben"
+    Bild="bilder/demo/back01.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <Element HorizontalePosition="900" VertikalePosition="300" Breite="1" Hoehe="500" />
+
+    <Element HorizontalePosition="1100" VertikalePosition="300" Breite="100" Hoehe="20" />
+
+    <Element HorizontalePosition="1500" VertikalePosition="300" Breite="1" Hoehe="500" />
+
+</Spielfeld>
