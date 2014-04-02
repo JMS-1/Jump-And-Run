@@ -1,0 +1,49 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="94fd3402-c064-430e-b899-65b824b0275f"
+    Beschreibung="Schritt 11 - Flucht vor dem Killer"
+    Bild="bilder/demo/back11.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <ElementMitBildSequenz HorizontalePosition="410" VertikalePosition="330" Name="linksNachRechts">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/killer.png" />
+        </ElementMitBildSequenz.Bilder>
+        
+        <ElementMitBildSequenz.Animation>
+            <HorizontaleBewegung Geschwindigkeit="5" VonLinksNachRechts="True" />
+        </ElementMitBildSequenz.Animation>
+        
+        <Enderegel ArtDerKollision="SpielerIstGetroffen" Gewonnen="False" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1390" VertikalePosition="330" Name="rechtsNachLinks" AnfänglichUnsichtbar="True">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/killer.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <ElementMitBildSequenz.Animation>
+            <HorizontaleBewegung Geschwindigkeit="5" VonLinksNachRechts="False" />
+        </ElementMitBildSequenz.Animation>
+
+        <Enderegel ArtDerKollision="SpielerIstGetroffen" Gewonnen="False" />
+    </ElementMitBildSequenz>
+
+    <Element HorizontalePosition="400" VertikalePosition="300" Breite="1" Hoehe="1000">
+        <Verschwinderegel ArtDerKollision="GetroffenAberNichtVomSpieler" WasSollVerschwinden="Beweglich" />
+    </Element>
+
+    <Element HorizontalePosition="1400" VertikalePosition="300" Breite="1" Hoehe="1000">
+        <Erscheineregel ArtDerKollision="GetroffenAberNichtVomSpieler" Name="rechtsNachLinks" />
+        <Verschwinderegel ArtDerKollision="GetroffenAberNichtVomSpieler" WasSollVerschwinden="Beweglich" />
+    </Element>
+</Spielfeld>

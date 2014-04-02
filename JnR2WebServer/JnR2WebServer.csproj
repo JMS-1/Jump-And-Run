@@ -75,6 +75,9 @@
     <Content Include="ClientBin\Bilder\05\SkullRechts.png" />
     <Content Include="ClientBin\Bilder\06\spielfeld.png" />
     <Content Include="ClientBin\Bilder\Demo\back02.png" />
+    <Content Include="ClientBin\Bilder\Demo\back11.png" />
+    <Content Include="ClientBin\Bilder\Demo\back10.png" />
+    <Content Include="ClientBin\Bilder\Demo\back09.png" />
     <Content Include="ClientBin\Bilder\Demo\back08.png" />
     <Content Include="ClientBin\Bilder\Demo\back07.png" />
     <Content Include="ClientBin\Bilder\Demo\back06.png" />
@@ -84,6 +87,7 @@
     <Content Include="ClientBin\Bilder\Demo\back01.png" />
     <Content Include="ClientBin\Bilder\Demo\huepfer1.png" />
     <Content Include="ClientBin\Bilder\Demo\sammel.png" />
+    <Content Include="ClientBin\Bilder\Demo\killer.png" />
     <Content Include="ClientBin\Bilder\developer.png" />
     <Content Include="ClientBin\Bilder\Figuren\PumpkinKingLinks.png" />
     <Content Include="ClientBin\Bilder\Figuren\PumpkinKingRechts.png" />
@@ -282,6 +286,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Spielfelder\Level15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spielfelder\Level16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spielfelder\Level17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spielfelder\Level18.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Content>

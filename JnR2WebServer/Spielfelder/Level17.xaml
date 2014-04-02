@@ -1,0 +1,23 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="16686183-4199-4a58-9c95-af672c723b3e"
+    Beschreibung="Schritt 10 - Mit Schweiß auf der Stirn"
+    Bild="bilder/demo/back10.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <Element HorizontalePosition="1200" VertikalePosition="301" Breite="10" Hoehe="100">
+        <Verschieberegel ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <Element HorizontalePosition="1300" VertikalePosition="301" Breite="1" Hoehe="1" />
+    
+</Spielfeld>

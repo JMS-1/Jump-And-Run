@@ -1,0 +1,34 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="4b812d25-6cc1-4da7-b20a-ebdd0ade823e"
+    Beschreibung="Schritt 9 - Die Falle schnappt zu"
+    Bild="bilder/demo/back09.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <Element HorizontalePosition="1200" VertikalePosition="330" Breite="10" Hoehe="10">
+        <Erscheineregel ArtDerKollision="VomSpielerGetroffen" Name="links" />
+        <Erscheineregel ArtDerKollision="VomSpielerGetroffen" Name="rechts" />
+        <Erscheineregel ArtDerKollision="VomSpielerGetroffen" Name="oben" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <Element HorizontalePosition="1100" VertikalePosition="300" Breite="1" Hoehe="500" Name="links" AnfänglichUnsichtbar="True"  Melodie="melodien/sammeln.mp3">
+        <Energieregel ArtDerKollision="VomSpielerGetroffen" Lebensenergie="-9500"/>
+    </Element>
+
+    <Element HorizontalePosition="1300" VertikalePosition="300" Breite="1" Hoehe="500" Name="rechts" AnfänglichUnsichtbar="True" />
+
+    <Element HorizontalePosition="1100" VertikalePosition="400" Breite="200" Hoehe="1" Name="oben" AnfänglichUnsichtbar="True">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="True" />
+    </Element>
+
+</Spielfeld>
