@@ -1,0 +1,25 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="6565d4c2-24a4-4cc6-a0f0-3b857de7620d"
+    Beschreibung="Schritt 7 - Gewinnen und verlieren"
+    Bild="bilder/demo/back07.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <Element HorizontalePosition="800" VertikalePosition="300" Breite="20" Hoehe="200">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="True" />
+    </Element>
+
+    <Element HorizontalePosition="1200" VertikalePosition="300" Breite="20" Hoehe="200">
+        <Enderegel ArtDerKollision="VomSpielerGetroffen" Gewonnen="False" />
+    </Element>
+
+</Spielfeld>

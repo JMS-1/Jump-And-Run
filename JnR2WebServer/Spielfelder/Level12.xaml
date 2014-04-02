@@ -3,7 +3,7 @@
     Kategorie="Demo"
     Kennung="9a598dae-b9fc-4f6a-a984-30a68a061dd0"
     Beschreibung="Schritt 5 - Hüpfen über einen Hüpfer"
-    Bild="bilder/demo/back01.png"
+    Bild="bilder/demo/back05.png"
     BildVerloren="bilder/gameover.png"
     BildGewonnen="bilder/gamewon.png"
     InitialePosition="1000, 400"

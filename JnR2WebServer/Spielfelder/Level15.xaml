@@ -1,0 +1,55 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="f3b7b7ff-beda-47f6-90db-04aefd00d4e1"
+    Beschreibung="Schritt 8 - Punkte sammeln"
+    Bild="bilder/demo/back08.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <ElementMitBildSequenz HorizontalePosition="1200" VertikalePosition="350" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/sammel.png" />
+        </ElementMitBildSequenz.Bilder>
+        
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="100" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1600" VertikalePosition="350">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/sammel.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="200" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="2000" VertikalePosition="350" Melodie="melodien/sammeln.mp3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/sammel.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerSeitlichGetroffen" Punkte="-50" />
+        <Verschwinderegel ArtDerKollision="VomSpielerSeitlichGetroffen" />
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="5000" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="2400" VertikalePosition="310" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/sammel.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Punkteregel ArtDerKollision="VomSpielerGetroffen" Punkte="5000" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </ElementMitBildSequenz>
+
+</Spielfeld>

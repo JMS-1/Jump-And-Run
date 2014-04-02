@@ -190,6 +190,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
+    <None Include="..\JnR2WebServer\Spielfelder\Level14.xaml">
+      <Link>Zum Editieren\Spielfelder\Level14.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\JnR2WebServer\Spielfelder\Level15.xaml">
+      <Link>Zum Editieren\Spielfelder\Level15.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
     <Page Include="SpielAuswahl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
