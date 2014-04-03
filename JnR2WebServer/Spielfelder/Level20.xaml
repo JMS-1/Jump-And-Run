@@ -14,19 +14,19 @@
 
     <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
 
-    <ElementMitBildSequenz HorizontalePosition="1200" VertikalePosition="400" Ebene="3">
+    <ElementMitBildSequenz HorizontalePosition="1200" VertikalePosition="320" Ebene="3">
         <ElementMitBildSequenz.Bilder>
             <EinzelBild Quelle="bilder/demo/vorne.png" />
         </ElementMitBildSequenz.Bilder>
     </ElementMitBildSequenz>
 
-    <ElementMitBildSequenz HorizontalePosition="1210" VertikalePosition="410" Ebene="1">
+    <ElementMitBildSequenz HorizontalePosition="1210" VertikalePosition="330" Ebene="1">
         <ElementMitBildSequenz.Bilder>
             <EinzelBild Quelle="bilder/demo/hinten.png" />
         </ElementMitBildSequenz.Bilder>
     </ElementMitBildSequenz>
 
-    <ElementMitBildSequenz HorizontalePosition="1205" VertikalePosition="405" Ebene="2">
+    <ElementMitBildSequenz HorizontalePosition="1205" VertikalePosition="325" Ebene="2">
         <ElementMitBildSequenz.Bilder>
             <EinzelBild Quelle="bilder/demo/mitte.png" />
         </ElementMitBildSequenz.Bilder>
