@@ -75,6 +75,8 @@
     <Content Include="ClientBin\Bilder\05\SkullRechts.png" />
     <Content Include="ClientBin\Bilder\06\spielfeld.png" />
     <Content Include="ClientBin\Bilder\Demo\back02.png" />
+    <Content Include="ClientBin\Bilder\Demo\back13.png" />
+    <Content Include="ClientBin\Bilder\Demo\back12.png" />
     <Content Include="ClientBin\Bilder\Demo\back11.png" />
     <Content Include="ClientBin\Bilder\Demo\back10.png" />
     <Content Include="ClientBin\Bilder\Demo\back09.png" />
@@ -85,9 +87,24 @@
     <Content Include="ClientBin\Bilder\Demo\back03.png" />
     <Content Include="ClientBin\Bilder\Demo\back05.png" />
     <Content Include="ClientBin\Bilder\Demo\back01.png" />
+    <Content Include="ClientBin\Bilder\Demo\hinten.png" />
     <Content Include="ClientBin\Bilder\Demo\huepfer1.png" />
+    <Content Include="ClientBin\Bilder\Demo\mitte.png" />
     <Content Include="ClientBin\Bilder\Demo\sammel.png" />
     <Content Include="ClientBin\Bilder\Demo\killer.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin01.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin02.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin03.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin04.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin05.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin06.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin07.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin08.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin09.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin10.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin11.png" />
+    <Content Include="ClientBin\Bilder\Demo\spin12.png" />
+    <Content Include="ClientBin\Bilder\Demo\vorne.png" />
     <Content Include="ClientBin\Bilder\developer.png" />
     <Content Include="ClientBin\Bilder\Figuren\PumpkinKingLinks.png" />
     <Content Include="ClientBin\Bilder\Figuren\PumpkinKingRechts.png" />
@@ -146,6 +163,7 @@
     <Content Include="index1.html" />
     <Content Include="Silverlight.js" />
     <Content Include="index.html" />
+    <Content Include="Spielfelder\back12.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -304,6 +322,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Spielfelder\Level18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spielfelder\Level19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spielfelder\Level20.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Content>

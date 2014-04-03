@@ -1,0 +1,48 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="8a523ec7-fc9b-4ec3-9d82-00a7530d7fd6"
+    Beschreibung="Schritt 12 - Bewegliche Gegner"
+    Bild="bilder/demo/back12.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <ElementMitBildSequenz HorizontalePosition="1200" VertikalePosition="400" BilderProSekunde="50" Faellt="True" >
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/spin01.png" />
+            <EinzelBild Quelle="bilder/demo/spin02.png" />
+            <EinzelBild Quelle="bilder/demo/spin03.png" />
+            <EinzelBild Quelle="bilder/demo/spin04.png" />
+            <EinzelBild Quelle="bilder/demo/spin05.png" />
+            <EinzelBild Quelle="bilder/demo/spin06.png" />
+            <EinzelBild Quelle="bilder/demo/spin07.png" />
+            <EinzelBild Quelle="bilder/demo/spin08.png" />
+            <EinzelBild Quelle="bilder/demo/spin09.png" />
+            <EinzelBild Quelle="bilder/demo/spin10.png" />
+            <EinzelBild Quelle="bilder/demo/spin11.png" />
+            <EinzelBild Quelle="bilder/demo/spin12.png" />
+        </ElementMitBildSequenz.Bilder>
+
+        <Verschieberegel ArtDerKollision="VomSpielerSeitlichGetroffen" />
+    </ElementMitBildSequenz>
+
+    <Element HorizontalePosition="1180" VertikalePosition="300" Breite="90" Hoehe="100">
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen" />
+    </Element>
+
+    <Element HorizontalePosition="1500" VertikalePosition="300" Breite="10" Hoehe="10">
+        <Verschwinderegel ArtDerKollision="GetroffenAberNichtVomSpieler" WasSollVerschwinden="Beweglich" />
+        <Verschwinderegel ArtDerKollision="VomSpielerGetroffen"/>
+    </Element>
+
+    <Element HorizontalePosition="1600" VertikalePosition="300" Breite="10" Hoehe="100">
+        <Enderegel ArtDerKollision="GetroffenAberNichtVomSpieler" Gewonnen="True" />
+    </Element>
+</Spielfeld>

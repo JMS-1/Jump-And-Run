@@ -1,0 +1,35 @@
+﻿<Spielfeld xmlns="clr-namespace:JMS.JnRV2.Ablage;assembly=GamePersistence"
+    
+    Kategorie="Demo"
+    Kennung="faf4c96d-c0b8-48b2-a694-e28d2f3eb3fb"
+    Beschreibung="Schritt 13 - Mehrere Zeichenebenen"
+    Bild="bilder/demo/back13.png"
+    BildVerloren="bilder/gameover.png"
+    BildGewonnen="bilder/gamewon.png"
+    InitialePosition="1000, 400"
+    MaximaleSprungStaerke="100"
+    MaximaleGeschwindigkeit="5"     
+    
+    >
+
+    <Element HorizontalePosition="0" VertikalePosition="300" Breite="4000" Hoehe="1" />
+
+    <ElementMitBildSequenz HorizontalePosition="1200" VertikalePosition="400" Ebene="3">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/vorne.png" />
+        </ElementMitBildSequenz.Bilder>
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1210" VertikalePosition="410" Ebene="1">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/hinten.png" />
+        </ElementMitBildSequenz.Bilder>
+    </ElementMitBildSequenz>
+
+    <ElementMitBildSequenz HorizontalePosition="1205" VertikalePosition="405" Ebene="2">
+        <ElementMitBildSequenz.Bilder>
+            <EinzelBild Quelle="bilder/demo/mitte.png" />
+        </ElementMitBildSequenz.Bilder>
+    </ElementMitBildSequenz>
+
+</Spielfeld>
