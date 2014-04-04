@@ -163,7 +163,6 @@
     <Content Include="index1.html" />
     <Content Include="Silverlight.js" />
     <Content Include="index.html" />
-    <Content Include="Spielfelder\back12.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
