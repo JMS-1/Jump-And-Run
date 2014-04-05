@@ -17,3 +17,5 @@ einen Mod zu erstellen.
 
 Zur Ausführung braucht man keinen Web Server - bei der Entwicklung allerdings ganz nützlich, aber
 teilweise auch störend. Man kann die Spielstruktur auch einfach lokal kopieren und dann aufrufen.
+
+Eine kurze Einführung habe ich auch gemacht: http://jumpnrun.nicolas-manns.de/HowTo.pdf
