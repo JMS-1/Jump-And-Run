@@ -127,6 +127,9 @@
 
             <TextBlock Text="Und hier gibt es auch noch die alten Versionen:" Margin="4,20,4,4" />
             <HyperlinkButton Content="Version 1" NavigateUri="http://downloads.psimarron.net/Silverlight/JumpAndRunV1" TargetName="_blank" Margin="20,0,4,4" />
+
+            <TextBlock Text="Und eine kurze Anleitung wie das denn alles so funktioniert:" />
+            <HyperlinkButton Content="Schritt für Schritt (PDF)" NavigateUri="http://jumpnrun.nicolas-manns.de/HowTo.pdf" TargetName="_blank" Margin="20,0,4,4" />
         </StackPanel>
     </ContentControl>
 </UserControl>
